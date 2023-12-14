@@ -9,7 +9,8 @@ router.post("/v1/user/create", UserController.register);
 router.use(authentication);
 
 router.get("/v1/user/balance", Controller.readBalance);
-
+router.post("/v1/user/balance", Controller.addBalance);
+router.post("/v1/user/transfer", Controller.transferBalance);
 router.use(errorHandler)
 
 

@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      this.belongsTo(models.User, { foreignKey: "userId" });
+      this.belongsTo(models.User, { foreignKey: "username" });
     }
   }
   Balance.init({
@@ -28,7 +28,7 @@ module.exports = (sequelize, DataTypes) => {
         },
       },
     },
-    userId: DataTypes.INTEGER
+    username: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'Balance',

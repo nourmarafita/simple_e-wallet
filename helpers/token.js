@@ -1,5 +1,6 @@
 const jwt = require("jsonwebtoken");
-const secretKey = process.env.SECRET_KEY;
+// const secretKey = process.env.SECRET_KEY;
+const secretKey = "inirahasia";
 
 function convertPayloadToToken(data) {
     const expiresIn = 432000;
